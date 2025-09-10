@@ -1,2 +1,77 @@
-# Weather_App
-The Weather App is a simple web application that allows users to check real-time weather information by entering a city and state. It displays details such as temperature, feels like, humidity, wind, precipitation, UV index, dew point, visibility, and cloud coverage in a clean and responsive UI.
+# Weather App 🌤️
+
+A simple weather web application that allows users to search for current
+weather conditions by entering a city and state name. The app displays
+real-time weather details such as temperature, feels like, wind,
+humidity, precipitation, UV index, dew point, visibility, and cloud
+coverage.
+
+------------------------------------------------------------------------
+
+## 🚀 Features
+
+-   Search weather by **city and state**\
+-   Displays:
+    -   🌡️ Temperature (Celsius & Fahrenheit)\
+    -   🌥️ Weather conditions\
+    -   💨 Wind speed & pressure\
+    -   💧 Humidity & Precipitation\
+    -   🔆 UV Index & Dew Point\
+    -   👀 Visibility & Cloud Percentage\
+-   Smooth UI with gradients and animations\
+-   Responsive design with styled cards
+
+------------------------------------------------------------------------
+
+## 🛠️ Technologies Used
+
+-   **HTML5**
+-   **CSS3**
+-   **JavaScript (Vanilla JS)**
+-   **Font Awesome Icons**
+
+------------------------------------------------------------------------
+
+## 📂 Project Structure
+
+    ├── weather.html      # Main HTML file
+    ├── weather.css     # Stylesheet
+    ├── weather.js      # JavaScript logic for fetching & displaying weather
+    └── README.md       # Project documentation
+
+------------------------------------------------------------------------
+
+## ⚡ How to Run
+
+1.  Clone the repository:
+
+    ``` bash
+    git clone https://github.com/your-username/weather-app.git
+    ```
+
+2.  Navigate into the project folder:
+
+    ``` bash
+    cd weather-app
+    ```
+
+3.  Open `weather.html` in your browser.
+
+------------------------------------------------------------------------
+
+## 🌍 API Integration
+
+This project is designed to work with any weather API (like
+**OpenWeatherMap API**).\
+Update the `weather.js` file with your API key and endpoint for live
+weather data.
+
+------------------------------------------------------------------------
+
+## 🤝 Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+------------------------------------------------------------------------
+
