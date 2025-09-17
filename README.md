@@ -34,7 +34,7 @@ coverage.
 
 ## 📂 Project Structure
 
-    ├── weather.html      # Main HTML file
+    ├── index.html      # Main HTML file
     ├── weather.css     # Stylesheet
     ├── weather.js      # JavaScript logic for fetching & displaying weather
     └── README.md       # Project documentation
@@ -46,7 +46,7 @@ coverage.
 1.  Clone the repository:
 
     ``` bash
-    git clone https://github.com/your-username/weather-app.git
+    git clone https://github.com/VivekYadav-77/weather-app.git
     ```
 
 2.  Navigate into the project folder:
@@ -55,7 +55,7 @@ coverage.
     cd weather-app
     ```
 
-3.  Open `weather.html` in your browser.
+3.  Open `index.html` in your browser.
 
 ------------------------------------------------------------------------
 
