@@ -1,0 +1,511 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+div {
+  color: white;
+  margin-top: 5px;
+  bottom: 5px;
+}
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  background: linear-gradient(
+    90deg,
+    #00f0ff,
+    #00ff9d,
+    #ff00f0,
+    #ff9900,
+    #00f0ff
+  );
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: float 1s ease infinite;
+}
+
+@keyframes float {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+#maindiv {
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 600px;
+  width: 80%;
+  background-image: url("weather.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#formdiv {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 5px, solid, none;
+  border-radius: 20px;
+}
+#formdiv {
+  background: linear-gradient(#0a0f1c, #0a0f1c) padding-box,
+    /* background */ linear-gradient(90deg, #ffea00, #00eeff, #00ff88, #9000ff)
+      border-box; /* border */
+  border: 4px solid transparent;
+  background-size: 200% 200%;
+  animation: borderMove 4s linear infinite;
+}
+
+@keyframes borderMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#userinputdiv {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  height: 30px;
+  width: 100%;
+  color: black;
+  border: 2px, solid, black;
+  border-radius: 15px;
+}
+#button {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+button {
+  background: linear-gradient(#ff7700, #00e0ff);
+  height: 100%;
+  width: 60%;
+  border: 2px, solid, none;
+  border-radius: 15px;
+}
+
+#fullweatherdatadiv {
+  min-height: 400px;
+  width: 100%;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#fullweatherdatadiv.show {
+  display: flex;
+  opacity: 1;
+}
+
+#locationtimedatadiv {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#locationinfo {
+  height: 90px;
+  width: 200px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#day {
+  height: 100%;
+  width: 100px;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#datetimeinfo {
+  height: 100px;
+  width: 120px;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#locationtimedatadiv {
+  color: white;
+
+  border-radius: 20px;
+  background: url("https://www.transparenttextures.com/patterns/waves.png"),
+    linear-gradient(135deg, #00e0ff, #3e00ff, #8e00ff, #ff0015);
+  background-size: 300% 300%;
+  animation: flow 2s linear infinite;
+  box-shadow: 0 0 20px #00aaff55;
+}
+
+@keyframes flow {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+#tempinfo {
+  height: 140px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: 5px, solid;
+  border-radius: 18px;
+  margin-top: 10px;
+}
+#tempinfo {
+  background: linear-gradient(#0a0f1c, #0a0f1c) padding-box,
+    /* background */ linear-gradient(90deg, #00f0ff, #ff00f0, #00ff88, #00f0ff)
+      border-box; /* border */
+  border: 4px solid transparent;
+  background-size: 200% 200%;
+  animation: borderMove 4s linear infinite;
+}
+
+@keyframes borderMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+#imgageofweathertype {
+  height: 100%;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#temp {
+  height: 100%;
+  width: 200px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tempclassforcss {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 50%;
+  font-size: 250%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tempclassforcss {
+  background: linear-gradient(
+    90deg,
+    #522258,
+    rgb(130, 209, 243),
+    #c63c51,
+    #d95f59
+  );
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: float 1s ease infinite;
+}
+
+@keyframes float {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+#conditionofweather {
+  height: 100%;
+  width: 180px;
+  font-size: 15px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#wind {
+  height: 200px;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(red, blue);
+  border: 5px, solid;
+  border-style: double;
+  border-radius: 15px;
+  /*box-shadow:  10px 5px 5px greenyellow,-10px 5px 5px rgb(240, 184, 80) ;*/
+}
+#windimage {
+  /* height: 80px; */
+  width: 54px;
+}
+#winddata {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#preasure {
+  height: 40px;
+  width: 250px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#humidityprecipitation {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  border: 2px, double, white;
+  border-radius: 15px;
+  background: linear-gradient(#864af9, #3b3486);
+  margin-top: 10px;
+}
+#humidityprecipitation {
+  background: linear-gradient(#0a0f1c, #0a0f1c) padding-box,
+    /* background */ linear-gradient(90deg, #00f0ff, #ff00f0, #00ff88, #00f0ff)
+      border-box; /* border */
+  border: 4px double transparent;
+  background-size: 200% 200%;
+  animation: borderMove 2s linear infinite;
+}
+
+@keyframes borderMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+#humidity {
+  height: 100%;
+  width: 40%;
+  font-size: 80%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* #humidityimage{
+    width: 74px;
+} */
+#humiddata {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#precipitation {
+  height: 100%;
+  width: 60%;
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#preceptionimage {
+  width: 50px;
+}
+#preceptiondata {
+  /* height: 40%; */
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#heat {
+  height: 130px;
+  width: 100%;
+  display: flex;
+  border: 5px, solid, none;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+#heat {
+  color: white;
+
+  border-radius: 20px;
+  background: url("https://www.transparenttextures.com/patterns/waves.png"),
+    linear-gradient(135deg, #00e0ff, #1ceb1c, #8e00ff, #f08c13);
+  background-size: 300% 300%;
+  animation: flow 4s linear infinite;
+  box-shadow: 0 0 20px #00aaff55;
+}
+
+@keyframes flow {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+#uvindex {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#uvindeximage {
+  width: 60px;
+}
+#uvindexdata {
+  height: 40%;
+  width: 100%;
+  font-size: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  align-items: center;
+}
+#dewpoint {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#dewpointimage {
+  height: 60px;
+  width: 60px;
+  background-image: url("dew.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#dewdata {
+  height: 40%;
+  width: 100%;
+  font-size: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#visibility {
+  height: 100px;
+  width: 100%;
+  display: flex;
+}
+#visibilitydistance {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#visbilityimage {
+  height: 50px;
+  width: 50px;
+  background-image: url("visibility_v3.gif");
+  background-size: cover;
+  background-position: center;
+}
+#visibilitydata {
+  height: 40%;
+  width: 100%;
+  font-size: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#cloud {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#cloudimage {
+  height: 50px;
+  width: 50px;
+  background-image: url("cloud.gif");
+  background-size: cover;
+  background-position: center;
+}
+#cloudpercentage {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
