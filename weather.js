@@ -87,5 +87,5 @@ function weather(userinput){
       weatherDiv.classList.add("show");
 
     }).catch(err=>console.log(err));
-
+console.log("hello this is the new one ")
 }
