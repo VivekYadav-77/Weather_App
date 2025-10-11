@@ -1,5 +1,5 @@
 * {
-  margin: 0px;
+  margin: 1px;
   padding: 0px;
 }
 
@@ -288,7 +288,7 @@ button {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background: linear-gradient(red, blue);
+  background: linear-gradient(red, green);
   border: 5px, solid;
   border-style: double;
   border-radius: 15px;
