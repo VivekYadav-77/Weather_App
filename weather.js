@@ -16,7 +16,6 @@ function formfunction(e) {
   e.preventDefault();
   const userinput = document.getElementById("userinput").value;
   weather(userinput);
-  const API_KEY = process.env.WEATHER_API_KEY;
   form.reset();
 }
 async function weather(userinput) {
