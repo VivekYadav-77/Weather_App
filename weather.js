@@ -8,10 +8,11 @@ function formfunction(e){
   e.preventDefault()
   const userinput = document.getElementById('userinput').value
   weather(userinput)
+  const API_KEY = process.env.WEATHER_API_KEY;
   form.reset()
 }
 function weather(userinput){
-  let url = `http://api.weatherapi.com/v1/current.json?{enter your api key}`;
+  let url = `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${userinput}&aqi=no`;
   fetch(url)
     .then(response=>{
       if(!response.ok){
