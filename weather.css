@@ -47,8 +47,6 @@ body {
   margin-right: auto;
   min-height: 600px;
   width: 80%;
-  background-image: url("weather.jpg");
-  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -443,9 +441,7 @@ button {
 #dewpointimage {
   height: 60px;
   width: 60px;
-  background-image: url("dew.jpg");
-  background-size: cover;
-  background-position: center;
+ 
 }
 #dewdata {
   height: 40%;
@@ -472,9 +468,6 @@ button {
 #visbilityimage {
   height: 50px;
   width: 50px;
-  background-image: url("visibility_v3.gif");
-  background-size: cover;
-  background-position: center;
 }
 #visibilitydata {
   height: 40%;
@@ -496,9 +489,6 @@ button {
 #cloudimage {
   height: 50px;
   width: 50px;
-  background-image: url("cloud.gif");
-  background-size: cover;
-  background-position: center;
 }
 #cloudpercentage {
   height: 40%;
