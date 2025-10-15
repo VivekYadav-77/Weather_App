@@ -1,4 +1,4 @@
-#Visit: https://weatherwiseowl.netlify.app/
+##Visit: https://weatherwiseowl.netlify.app/
 
 # Weather App 🌤️
 A simple weather web application that allows users to search for current
@@ -34,11 +34,14 @@ coverage.
 ------------------------------------------------------------------------
 
 ## 📂 Project Structure
-
-    ├── index.html      # Main HTML file
-    ├── weather.css     # Stylesheet
-    ├── weather.js      # JavaScript logic for fetching & displaying weather
-    └── README.md       # Project documentation
+    Weather_App/
+    ├── 📁 netlify/
+    │   └── 📁 functions/
+    │       └── getWeather.js
+    ├── weather.css
+    ├── weather.js
+    ├── index.html
+    └── README.md
 
 ------------------------------------------------------------------------
 
@@ -76,3 +79,4 @@ to discuss what you would like to change.
 
 
 ------------------------------------------------------------------------
+
