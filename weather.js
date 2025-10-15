@@ -20,7 +20,7 @@ function formfunction(e) {
 }
 async function weather(userinput) {
   const url = `/.netlify/functions/getWeather?userinput=${userinput}`;
-  fetch(url);
+
   try {
     const response = await fetch(url);
     const res = await response.json(); // 'res' will hold our weather data
